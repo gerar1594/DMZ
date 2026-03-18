@@ -8,6 +8,8 @@ Tenemos tres redes
 * Red DMZ con un servidor web con ip 192.168.2.10
 * Red Externa con una máquina. con ip 192.168.3.10
 
+![Topología de Red](/images/image.png)
+
 # Objetivo
 
 Tenemos que crear varias ACLs para cumplir varios objetivos.
@@ -16,11 +18,11 @@ Los objetivos son:
 * Desde la red externa tenga acceso al servidor web pero no pueda acceder a más puertos como ping.
 * Desde la DMZ no tenga acceso a la red interna pero la red interna sí que tenga acceso al servidor web pero a más protocolos.
 
-![Topología de Red](images/images1.png)
+![Resultados](/images/image2.png)
 
 ## Desarrollo de las ACLs
 
-![Comandos show access-lists en el Router_FW](images/images2.png)
+![Access-lists en el Router_FW](/images/image1.png)
 ## Creamos la primera ACL sin nombre.
 ```cisco
 Router_FW> enable
